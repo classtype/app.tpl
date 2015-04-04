@@ -1,0 +1,17 @@
+{use 'a.html'}
+{use 'b/a.html'}
+{use 'c/b/a.html'}
+{use 'd/c/b/a.html'}
+{use 'a.css'}
+{use 'b/a.css'}
+{use 'c/b/a.css'}
+{use 'd/c/b/a.css'}
+{use:html '<html>http://algame.ru/{src}</html>'}
+{use:css '<css>http://algame.ru/{path}css/{file}</css>'}
+<div>Имя: {name}</div>
+{for name}
+    <div>{name.text}</div>
+    <div>{name.text}</div>
+    <div>{name.text}</div>
+{/if}
+<div>Имя: {name}</div>
